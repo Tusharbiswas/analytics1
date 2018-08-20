@@ -156,11 +156,11 @@ students$grades=factor(students$grades,ordered=T,levels=c('C','B','A'))
 summary(students$grades)
 students$grades
 
-
-
-
-
-
+students
+write.csv(students,'./data/iimtrichy.csv')
+students2=read.csv('./data/iimtrichy.csv')
+students3=read.csv(file.choose())
+install.packages('gsheet')
 
 
 
